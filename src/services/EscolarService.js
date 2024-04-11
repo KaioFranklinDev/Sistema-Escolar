@@ -1,4 +1,4 @@
-const { buscarUm } = require('../controllers/EscolarController');
+const { buscarUm, excluir } = require('../controllers/EscolarController');
 const db = require('../db');
 
 module.exports = {
@@ -26,5 +26,44 @@ module.exports = {
 
         });
 
+    },
+    inserir: (nome, idade) => {
+
+        return new Promise ((aceito,rejeitado)=>{
+
+            db.query('INSERT INTO professores (nome, idade) VALUES (?,?)',
+                [nome, idade],
+                (error,results)=>{
+                    if(error){ rejeitado(error); return}
+                    aceito(results.insertCodigo);
+                }
+            );
+
+        });
+
+    },
+
+    alterar: (codigo, nome, idade) => {
+
+        return new Promise ((aceito,rejeitado)=>{
+
+            db.query('UPDATE professores SET nome = ?, idade= ? WHERE codigo = ?',
+                [nome, idade, codigo],
+                (error,results)=>{
+                    if(error){ rejeitado(error); return}
+                    aceito(results);
+                }
+            );
+
+        });
+
+    },
+    excluir: (codigo)=>{
+        return new Promise((aceito, rejeitado)=>{
+            db.query('DELETE FROM professores WHERE codigo = ?',[codigo],(error, results)=>{
+                if(error){rejeitado(error); return;}
+                aceito(results);
+            });
+        });
     }
 };

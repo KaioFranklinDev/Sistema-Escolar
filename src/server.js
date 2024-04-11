@@ -14,3 +14,4 @@ server.use('/api', routes)
 server.listen(process.env.PORT, ()=>{
     console.log(`Servidor Rodando em http://localhost:${process.env.PORT}`);
 })
+
