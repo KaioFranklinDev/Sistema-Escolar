@@ -1,0 +1,42 @@
+.container-main{
+    margin-top: 20vw;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.btn-main{
+    height: 100px;
+    width: 150px;
+}
+img{
+    height: 30px;
+}
+.header-title{
+    color: white;
+    height: 60px;
+    font-size: 36px;
+    
+}
+.container-main-direcao{
+    margin-top: 5vw;
+}
+.table{
+     margin-top: 50px;
+}
+.btn-table{
+    width: 80px;
+    margin-bottom: 4px;
+    
+}
+.container-main-disciplina-add{
+    padding-top: 60px; 
+}
+.disciplina-criacao-date{
+   margin-top: 30px;
+   
+}
+.disciplina-criacao-btn{
+    margin-top: 80px;
+    margin-left: 30px;
+}
