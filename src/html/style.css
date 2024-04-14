@@ -25,7 +25,8 @@ img{
      margin-top: 50px;
 }
 .btn-table{
-    width: 80px;
+    min-width: 92px;
+    width: auto;
     margin-bottom: 4px;
     
 }

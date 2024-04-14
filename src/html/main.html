@@ -4,18 +4,18 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-   <link rel="stylesheet" href="style.css">
-   <title>Document</title>
+   <link rel="stylesheet" href="http://localhost:3000/api/css">
+   <title>Home</title>
 </head>
 <body>
     <header>
        <nav class=" navbar navbar-expand-xxlg navbar-dark bg-dark col">
             <div class="col-1">
-                <a  class="navbar-brand" href="#">EduStation</a>
+                <a  class="navbar-brand" href="http://localhost:3000/home">EduStation</a>
             </div>
             <div class="dropdown dropleft ml-0">
                 <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="../../assets/img/perfil.png" alt="icone pessoal">
+                    <img src="http://localhost:3000/api/img-user" alt="icone pessoal">
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Alterar</a>
@@ -33,8 +33,8 @@
     </header>
      <main class="container container-main">
         
-        <button type="button" class="btn btn-main btn-secondary">Direção</button>
-        <button type="button" class="btn btn-main btn-secondary">Docente</button>
+        <button type="button" class="btn btn-main btn-secondary" onclick="window.location.href='http://localhost:3000/direcao'">Direção</button>
+        <button type="button" class="btn btn-main btn-secondary" onclick="window.location.href='http://localhost:3000/docente'">Docente</button>
         <button type="button" class="btn btn-main btn-secondary">Aluno(a)</button>
         <button type="button" class="btn btn-main btn-secondary">Disciplina</button>
         <button type="button" class="btn btn-main btn-secondary">Turma</button>
